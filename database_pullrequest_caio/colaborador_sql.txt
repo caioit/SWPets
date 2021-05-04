@@ -1,0 +1,16 @@
+CREATE TABLE `colaborador` (
+  `codigo` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(60) NOT NULL,
+  `idade` int(11) NOT NULL,
+  `nascimento` varchar(20) NOT NULL,
+  `endereco` varchar(100) NOT NULL,
+  `endereco_numero` int(11) NOT NULL,
+  `cargo` varchar(30) DEFAULT NULL CHECK (`cargo` in ('administrador','dono','voluntario','veterinario')),
+  `rg` int(11) NOT NULL,
+  `cpf` int(11) NOT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  `celular` varchar(20) NOT NULL,
+  `email` varchar(60) DEFAULT NULL,
+  `data_inicio` varchar(20) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

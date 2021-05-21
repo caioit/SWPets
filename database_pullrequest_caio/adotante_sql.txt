@@ -1,0 +1,17 @@
+CREATE TABLE `adotante` (
+  `codigo` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `idade` int(11) DEFAULT NULL,
+  `nascimento` varchar(15) NOT NULL,
+  `endereco` varchar(70) NOT NULL,
+  `endereco_numero` int(11) NOT NULL,
+  `rg` int(11) NOT NULL,
+  `cpf` int(11) NOT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  `celular` varchar(20) NOT NULL,
+  `email` varchar(35) DEFAULT NULL,
+  `aptidao` varchar(4) DEFAULT NULL CHECK (`aptidao` in ('sim','nao')),
+  `documento` varchar(10) DEFAULT NULL CHECK (`documento` in ('ok','pendente')),
+  `observacao` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;

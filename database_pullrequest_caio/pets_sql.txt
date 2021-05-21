@@ -1,0 +1,22 @@
+CREATE TABLE `pets` (
+  `codigo` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(30) NOT NULL,
+  `especie` varchar(20) DEFAULT NULL CHECK (`especie` in ('Gato','Cachorro')),
+  `cor` varchar(20) DEFAULT NULL,
+  `raca` varchar(30) DEFAULT NULL,
+  `idade` int(11) DEFAULT NULL,
+  `castrado` varchar(5) DEFAULT NULL CHECK (`castrado` in ('sim','nao')),
+  `vacinacao` varchar(15) DEFAULT NULL CHECK (`vacinacao` in ('atualizada','atrasada')),
+  `dataChegada` varchar(15) NOT NULL,
+  `adotado` varchar(5) DEFAULT NULL CHECK (`adotado` in ('sim','nao')),
+  `nascimento` varchar(15) DEFAULT NULL,
+  `porte` varchar(15) DEFAULT NULL CHECK (`porte` in ('pequeno','medio','grande','gigante')),
+  `observacao` varchar(500) DEFAULT NULL,
+  `adotante` int(11) DEFAULT NULL,
+  `cadastrador` int(11) DEFAULT NULL,
+  PRIMARY KEY (`codigo`),
+  KEY `adotante` (`adotante`),
+  KEY `pets_cadastrador_fk` (`cadastrador`),
+  CONSTRAINT `pets_cadastrador_fk` FOREIGN KEY (`cadastrador`) REFERENCES `colaborador` (`codigo`),
+  CONSTRAINT `pets_ibfk_2` FOREIGN KEY (`adotante`) REFERENCES `adotante` (`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;

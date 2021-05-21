@@ -1,0 +1,7 @@
+CREATE TABLE `estoque` (
+  `codigo` int(11) NOT NULL AUTO_INCREMENT,
+  `item` varchar(50) NOT NULL,
+  `categoria` varchar(20) DEFAULT NULL CHECK (`categoria` in ('alimentacao','veterinario','higiene','outro')),
+  `quantidade` varchar(30) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4;

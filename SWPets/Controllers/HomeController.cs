@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SWPets.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,6 +16,16 @@ namespace SWPets.Controllers
 
         public ActionResult Pets()
         {
+            var pet = new Pet
+            {
+                PetId = 1,
+                PetNome = "Bingo"
+
+            };
+
+            ViewData["PetId"] = pet.PetId;
+            ViewData["PetNome"] = pet.PetNome;
+
             return View();
         }
 

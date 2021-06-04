@@ -13,14 +13,16 @@
         }
     </style>
 
-    @Html.Partial("_menu")
+    <div>
+        @Html.Partial("_menu")
+    </div>
 
     <div id="first_body" class="first_body">
 
         <div class="container body-content">
             @RenderBody()
         </div>
-    </div>
+    </div>    
 
 </body>
 </html>

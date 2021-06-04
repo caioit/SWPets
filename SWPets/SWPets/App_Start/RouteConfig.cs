@@ -16,8 +16,27 @@ namespace SWPets
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional });
+
+            routes.MapRoute(
+                name: "Pets",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Pets", id = UrlParameter.Optional });
+
+            routes.MapRoute(
+                name: "Adotantes",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Adotantes", id = UrlParameter.Optional });
+
+            routes.MapRoute(
+                name: "Estoque",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Estoque", id = UrlParameter.Optional });
+
+            routes.MapRoute(
+               name: "Ajuda",
+               url: "{controller}/{action}/{id}",
+               defaults: new { controller = "Home", action = "Ajuda", id = UrlParameter.Optional });
         }
     }
 }

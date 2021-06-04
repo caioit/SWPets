@@ -13,6 +13,26 @@ namespace SWPets.Controllers
             return View();
         }
 
+        public ActionResult Pets()
+        {
+            return View();
+        }
+
+        public ActionResult Adotantes()
+        {
+            return View();
+        }
+
+        public ActionResult Estoque()
+        {
+            return View();
+        }
+
+        public ActionResult Ajuda()
+        {
+            return View();
+        }
+
 
     }
 }

@@ -49,12 +49,12 @@
     </style>
     <div id="menu" class="div-navbar">
         <ul id="menu">
-            <li id="home"><a href="home.html">Home</a></li>
-            <li id="pets"><a href="pets.html">Pets</a></li>
-            <li id="adotantes"><a href="adotantes.html">Adotantes</a></li>
-            <li id="estoque"><a href="estoque.html">Estoque</a></li>
-            <li id="ajuda"><a href="ajuda.html">Ajuda</a></li>
-            <li id="login"><a href="login.html"><b>Login</b></a></li>
+            @Html.ActionLink("Home","Index","Home")
+            @Html.ActionLink("Pets", "Pets", "Home")
+            @Html.ActionLink("Adotantes", "Adotantes", "Home")
+            @Html.ActionLink("Estoque", "Estoque", "Home")
+            @Html.ActionLink("Ajuda", "Ajuda", "Home")
+            @Html.ActionLink("Login", "Login", "Home")           
         </ul>
     </div>
 

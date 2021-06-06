@@ -1,6 +1,7 @@
 ﻿using SWPets.Models;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -11,6 +12,7 @@ namespace SWPets.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
         }
 
@@ -20,7 +22,9 @@ namespace SWPets.Controllers
             {
 
             };
-            
+
+            ViewData["senha"] = ConfigurationManager.AppSettings["UninoveSWPets"];
+
             return View(pet);
         }
 
@@ -31,6 +35,7 @@ namespace SWPets.Controllers
 
         public ActionResult Estoque()
         {
+            ViewBag.Message = "Estoque";        
             return View();
         }
 

@@ -13,8 +13,8 @@ namespace SWPets.Models
         public int Castrado { get; set; }
         public string Vacinado { get; set; }
         public DateTime DataChegada { get; set; }
-        public int Adotado { get; set; }
-        public string Nascimento { get; set; }
+        public string Adotado { get; set; }
+        public DateTime Nascimento { get; set; }
         public string Porte { get; set; }
         public int Observacao { get; set; }
         public int Adotante { get; set; }

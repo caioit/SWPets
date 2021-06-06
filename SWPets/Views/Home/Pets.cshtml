@@ -1,9 +1,115 @@
-﻿@{
+﻿@model SWPets.Models.Pet
+
+@{
     ViewBag.Title = "Pets";
 }
 
 <h2>Pets</h2>
-<body>
-    <p> @ViewData["PetId"]</p>
-    <p> @ViewData["PetNome"]</p>
-</body>
+
+@using (Html.BeginForm("Lista", "Home", FormMethod.Post))
+{ 
+    <fieldset>
+        <legend>Informações do Pet</legend>
+
+
+        <div>
+            <label for="PetNome">Nome do Pet</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.PetNome)
+        </div>
+
+        <div>
+            <label for="Especie">Espécie</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Especie)
+        </div>
+
+        <div>
+            <label for="Cor">Cor</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Cor)
+        </div>
+
+        <div>
+            <label for="Raca">Raça</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Raca)
+        </div>
+
+        <div>
+            <label for="Idade">Idade</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Idade)
+        </div>
+
+        <div>
+            <label for="Castrado">Castrado</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Castrado)
+        </div>
+
+        <div>
+            <label for="Vacinado">Vacinado</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Vacinado)
+        </div>
+
+        <div>
+            <label for="DataChegada">DataChegada</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.DataChegada)
+        </div>
+
+        <div>
+            <label for="Adotado">Adotado</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Adotado)
+        </div>
+
+        <div>
+            <label for="Nascimento">Nascimento</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Nascimento)
+        </div>
+
+        <div>
+            <label for="Porte">Porte</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Porte)
+        </div>
+
+        <div>
+            <label for="Observacao">Observacao</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Observacao)
+        </div>
+
+        <div>
+            <label for="Adotante">Adotante</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Adotante)
+        </div>
+
+        <div>
+            <label for="Cadastrador">Cadastrador</label>
+        </div>
+        <div>
+            @Html.EditorFor(x => x.Cadastrador)
+        </div>
+
+        <p><input type="submit" value="Salvar" /></p>
+    </fieldset>
+}

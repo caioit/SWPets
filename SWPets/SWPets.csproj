@@ -273,6 +273,7 @@
     <Content Include="Views\Home\Adotantes.cshtml" />
     <Content Include="Views\Home\Estoque.cshtml" />
     <Content Include="Views\Home\Ajuda.cshtml" />
+    <Content Include="Views\Home\Lista.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

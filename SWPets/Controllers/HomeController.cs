@@ -18,15 +18,10 @@ namespace SWPets.Controllers
         {
             var pet = new Pet
             {
-                PetId = 1,
-                PetNome = "Bingo"
 
             };
-
-            ViewData["PetId"] = pet.PetId;
-            ViewData["PetNome"] = pet.PetNome;
-
-            return View();
+            
+            return View(pet);
         }
 
         public ActionResult Adotantes()
@@ -42,6 +37,14 @@ namespace SWPets.Controllers
         public ActionResult Ajuda()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Lista(Pet pet)
+        {
+            
+
+            return View(pet);
         }
 
 

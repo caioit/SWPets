@@ -37,6 +37,11 @@ namespace SWPets
                name: "Ajuda",
                url: "{controller}/{action}/{id}",
                defaults: new { controller = "Home", action = "Ajuda", id = UrlParameter.Optional });
+
+            routes.MapRoute(
+               name: "Lista",
+               url: "{controller}/{action}/{id}",
+               defaults: new { controller = "Home", action = "Lista", id = UrlParameter.Optional });
         }
     }
 }

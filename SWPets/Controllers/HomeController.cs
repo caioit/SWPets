@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,6 +13,8 @@ namespace SWPets.Controllers
     {
         public ActionResult Index()
         {
+            SqlConnection conexao = new SqlConnection(@"data source=swpets.database.windows.net ; Integrated Security=caio.b ; Initial Catalog=C@165549");
+            conexao.Open();
 
             return View();
         }

@@ -1,0 +1,5 @@
+D:\Projetos\SWPets\SWPets_BD\obj\Debug\SWPets_BD.csprojResolveAssemblyReference.cache
+D:\Projetos\SWPets\SWPets_BD\bin\Debug\SWPets_BD.dll
+D:\Projetos\SWPets\SWPets_BD\bin\Debug\SWPets_BD.pdb
+D:\Projetos\SWPets\SWPets_BD\obj\Debug\SWPets_BD.dll
+D:\Projetos\SWPets\SWPets_BD\obj\Debug\SWPets_BD.pdb

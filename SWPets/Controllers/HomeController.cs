@@ -1,4 +1,5 @@
 ﻿using SWPets.Models;
+using SWPets_BD;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -7,15 +8,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace SWPets.Controllers
 {
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
-            SqlConnection conexao = new SqlConnection(@"data source=swpets.database.windows.net ; Integrated Security=caio.b ; Initial Catalog=C@165549");
-            conexao.Open();
-
+            
             return View();
         }
 
@@ -25,8 +25,6 @@ namespace SWPets.Controllers
             {
 
             };
-
-            ViewData["senha"] = ConfigurationManager.AppSettings["UninoveSWPets"];
 
             return View(pet);
         }
@@ -50,7 +48,9 @@ namespace SWPets.Controllers
         [HttpPost]
         public ActionResult Lista(Pet pet)
         {
-            
+            Banco novaConexao = new Banco();
+
+            novaConexao.strQuerySelect();
 
             return View(pet);
         }

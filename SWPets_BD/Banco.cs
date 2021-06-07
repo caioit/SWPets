@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using SWPets.Models;
 
 namespace SWPets_BD
 {
@@ -28,6 +29,11 @@ namespace SWPets_BD
             SqlCommand cmdCoandoSelect = new SqlCommand(strQuerySelect, conexao);
             SqlDataReader dados = cmdCoandoSelect.ExecuteReader();
             return dados;
+        }
+
+        public void Construtor()
+        {
+
         }
         
     }

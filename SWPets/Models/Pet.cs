@@ -12,7 +12,7 @@ namespace SWPets.Models
         public string Cor { get; set; }
         public string Raca { get; set; }
         public int Idade { get; set; }
-        public int Castrado { get; set; }
+        public string Castrado { get; set; }
         public string Vacinado { get; set; }
 
         [Display(Name = "Data de Chegada")]
@@ -27,7 +27,9 @@ namespace SWPets.Models
 
         public string Porte { get; set; }
         public string Observacao { get; set; }
+        /*
         public int Adotante { get; set; }
         public int Cadastrador { get; set; }
+        */
     }
 }

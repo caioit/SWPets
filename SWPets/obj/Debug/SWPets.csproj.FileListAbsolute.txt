@@ -244,3 +244,5 @@ D:\Projetos\SWPets\SWPets\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Projetos\SWPets\SWPets\obj\Debug\SWPets.csprojResolveAssemblyReference.cache
 D:\Projetos\SWPets\SWPets\obj\Debug\SWPets.dll
 D:\Projetos\SWPets\SWPets\obj\Debug\SWPets.pdb
+D:\Projetos\SWPets\SWPets\bin\SWPets_BD.dll
+D:\Projetos\SWPets\SWPets\bin\SWPets_BD.pdb

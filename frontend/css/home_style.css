@@ -45,7 +45,42 @@ ul#menu li a:hover {
 
 /*------------FIRST BODY----------------*/
 
-div#first_body {
+div#main {
 	height: 700px;
 	background-color: rgba(139, 0, 190, 1.0);
+}
+
+div#first_body {
+	height: 500px;
+	width: 1200px;
+	background-color: white;
+	float: left;
+	margin-top: 100px;
+}
+
+div#div-artigo {
+	float: left;
+	margin-top: 100px;
+	width: 500px;
+	padding: 10px;
+	margin-left: 100px;
+}
+
+div#div-artigo article#artigo-home p {
+	font-family: sans-serif;
+	font-size: 15pt;
+	color: black;
+	text-align: justify;
+}
+
+div#div-artigo h3 {
+	font-family: sans-serif;
+	font-size: 20pt;
+}
+
+
+div#div-gif {
+	float: right;
+	margin-top: 120px;
+	margin-right: 100px;
 }

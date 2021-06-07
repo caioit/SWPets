@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial_scale=1"/>
+    <link rel="stylesheet"  type="text/css" href="../css/adotantes_cadastrar.css"/>
+    <title>Testando</title>
+</head>
+<body>
+
+<div id="central" class="div-central">
+
+    <div id="menu" class="div-navbar">
+        <ul id="menu">
+            <li id="home"><a href="home.html">Home</a></li>
+            <li id="pets"><a href="pets.html">Pets</a></li>
+            <li id="adotantes"><a href="adotantes.html">Adotantes</a></li>
+            <li id="estoque"><a href="estoque.html">Estoque</a></li>
+            <li id="ajuda"><a href="ajuda.html">Ajuda</a></li>
+            <li id="login"><a href="login.html"><b>Login</b></a></li>
+        </ul>
+    </div>
+
+    <div id="form-div" class="cform-div">
+        
+        <form  id="form-adotantes" action="arquivo.php" method="get">
+
+            <legend id="main-legend"><b>Identificação do Adotante</b></legend>
+
+            <p><label for="id_name">Nome:</label><input type="text" name="nome" id="id_name" size="60" maxlength="60" placeholder="Ex: João Pedro" required/></p>
+
+            <p><label for="id_idade">Idade:</label><input type="number" name="idade" id="id_idade" required/></p>
+
+            <p><label for="id_nascimento">Nascimento:</label><input type="date" name="nascimento" id="id_nascimento" size="15" maxlength="15" placeholder="10/10/2010" required/></p>
+
+            <p><label for="id_endereco">Endereço:</label><input type="text" name="endereco" id="id_endereco" size="50" maxlength="100" placeholder="Rua Antônio Garcia" required/> </p>
+            <p><label for="id_endereco_numero">Número:</label><input type="number" name="endereco_numero" id="id_endereco_numero" min="1" max="99999" placeholder="256" size="5" required> </p>
+
+            <p><label for="id_rg">RG:</label><input type="text" name="rg" id="id_rg" required/></p>
+            <p><label for="id_cpf">CPF:</label><input type="text" name="cpf" id="id_cpf" required/></p>
+
+            <p><label for="id_telefone">Telefone:</label><input type="text" name="telefone" id="id_telefone" size="15" maxlength="15" placeholder="Ex: 32204569"/> </p>
+            <p><label for="id_celular">Celular:</label><input type="text" name="celular" id="id_celular" size="15" maxlength="15" placeholder="Ex: 11956158845"/> </p>
+
+            <p><label for="id_email">Email:</label><input type="text" name="email" id="id_email" size="60" maxlength="60" placeholder="user@gmail.com"/> </p>
+
+            <legend>Aptidao:</legend>
+                <input type="radio" name="aptidao" id="id_apto" value="sim" /><label for="id_apto">Apto</label><br/> 
+                <input type="radio" name="aptidao" id="id_naoApto" value="nao" checked /><label for="id_naoApto">Não apto</label>
+
+            <legend>Documento:</legend>
+                <input type="radio" name="documento" id="id_ok" value="ok" required /><label for="id_ok">Atualizada</label><br/> 
+                <input type="radio" name="documento" id="id_pendente" value="pendente" required checked /><label for="id_pendente">Pendente</label>
+
+            <p><label for="id_observacao">Observação:</label>
+            <textarea name="observacao" id="id_observacao" cols="45" rows="5" placeholder="Deixa sua observação"></textarea></p>
+
+
+            <button id="botao-envio">INSERIR</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

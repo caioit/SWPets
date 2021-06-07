@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial_scale=1"/>
+    <link rel="stylesheet"  type="text/css" href="../css/pets_cadastrar.css"/>
+    <title>Testando</title>
+</head>
+<body>
+
+<div id="central" class="div-central">
+
+    <div id="menu" class="div-navbar">
+        <ul id="menu">
+            <li id="home"><a href="home.html">Home</a></li>
+            <li id="pets"><a href="pets.html">Pets</a></li>
+            <li id="adotantes"><a href="adotantes.html">Adotantes</a></li>
+            <li id="estoque"><a href="estoque.html">Estoque</a></li>
+            <li id="ajuda"><a href="ajuda.html">Ajuda</a></li>
+            <li id="login"><a href="login.html"><b>Login</b></a></li>
+        </ul>
+    </div>
+
+    <div id="form-div" class="cform-div">
+        
+        <form id="form-pets" action="pets" method="post">
+
+            <legend id="main-legend"><b>Identificação do Animal</b></legend>
+
+            <p><label for="id_name">Nome:</label><input type="text" name="nome" id="id_name" size="30" maxlength="30" placeholder="Ex: Marley" required/> </p>
+
+
+            <legend>Espécie:</legend>
+
+                <p><input type="radio" name="especie" id="id_gato" value="Gato" required checked/><label for="id_gato">Gato</label><br/> 
+                <input type="radio" name="especie" id="id_cachorro" value="Cachorro" required/><label for="id_cachorro">Cachorro</label></p>
+
+
+            <p><label for="id_cor">Cor:</label><input type="text" name="cor" id="id_cor" size="20" maxlength="20" placeholder="Cor:" required/> </p>
+
+            <p><label for="id_raca">Raca:</label><input type="text" name="raca" id="id_raca" size="30" maxlength="30" placeholder="Raça:"/> </p>
+
+            <p><label for="id_idade">Idade:</label><input type="number" name="idade" id="id_idade"/></p>
+
+            <legend>Castrado:</legend>
+
+                <input type="radio" name="castrado" id="id_castrado" value="sim" checked/><label for="id_castrado">Castrado</label><br/> 
+                <input type="radio" name="castrado" id="id_naoCastrado" value="nao" /><label for="id_cachorro">Não castrado</label>
+
+            
+
+            <p><label for="id_vacinacao">Vacina</label>
+                <select name="vacinacao" id="id_vacinacao">
+                        <option value="atualizada">Atualizada</option>
+                        <option value="atrasada">Atrasada</option>
+                </select>
+            </p>
+                
+            <p><label for="id_data">Data de Chegada:</label><input type="text" name="dataChegada" id="id_data" size="15" maxlength="15" placeholder="27/11/2020" required/></p>
+
+
+            <input type="radio" name="adotado" id="id_adotado" value="sim" /><label for="id_adotado">Adotado</label><br/> 
+            <input type="radio" name="adotado" id="id_naoAdotado" value="nao" checked/><label for="id_naoAdotado">Não adotado</label>
+
+            <p><label for="id_nascimento">Nascimento:</label><input type="text" name="nascimento" id="id_nascimento" size="15" maxlength="15" placeholder="10/10/2010"/></p>
+
+            <p><label for="id_porte">Tamanho:</label>
+                <select name="porte" id="id_porte">
+                        <option value="pequeno">Pequeno</option>
+                        <option value="media">Médio</option>
+                        <option value="grande">Grande</option>
+                        <option value="gigante">Gigante</option>
+                </select>
+            </p>
+
+            <p><label for="id_cadastrador">Código de Cadastrador:</label><input type="number" name="cadastrador" id="id_cadastrador"/></p>
+
+            <p><label for="id_observacao">Observação:</label>
+            <textarea name="observacao" id="id_observacao" cols="45" rows="5" placeholder="Deixa sua observação"></textarea></p>
+
+            <button id="botao-envio">INSERIR</button>
+
+
+
+        </form>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

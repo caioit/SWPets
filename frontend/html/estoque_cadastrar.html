@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial_scale=1"/>
+    <link rel="stylesheet"  type="text/css" href="../css/estoque_cadastrar.css"/>
+    <title>Testando</title>
+</head>
+<body>
+
+<div id="central" class="div-central">
+
+    <div id="menu" class="div-navbar">
+        <ul id="menu">
+            <li id="home"><a href="home.html">Home</a></li>
+            <li id="pets"><a href="pets.html">Pets</a></li>
+            <li id="adotantes"><a href="adotantes.html">Adotantes</a></li>
+            <li id="estoque"><a href="estoque.html">Estoque</a></li>
+            <li id="ajuda"><a href="ajuda.html">Ajuda</a></li>
+            <li id="login"><a href="login.html"><b>Login</b></a></li>
+        </ul>
+    </div>
+
+    <div id="form-div" class="cform-div">
+
+        <form  id="form-estoque" action="servletEstoques" method="get"  >
+
+            <legend id="main-legend"><b>Controle do Estoque</b></legend>
+
+            <p><label for="id_item">Nome do item:</label><input type="text" name="item" id="id_item" size="50" maxlength="50" placeholder="Ex: Ração" required/> </p>
+
+            <p><label for="id_categoria">Categoria:</label>
+                <select name="categoria" id="id_categoria" required>
+                        <option value="alimentacao">Alimentação</option>
+                        <option value="veterinario">Veterinário</option>
+                        <option value="higiene">Higiene</option>
+                        <option value="outro">Outro</option>
+                </select>
+            </p>
+
+            <p><label for="id_quantidade">Quantidade:</label><input type="text" name="quantidade" id="id_quantidade" size="30" maxlength="30" placeholder="Ex: 5kg" required/> </p>
+
+
+            <button id="botao-envio">INSERIR</button>
+
+
+
+        </form>
+        
+    </div>
+
+</div>
+
+</body>
+</html>

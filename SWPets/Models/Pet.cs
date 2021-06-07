@@ -27,9 +27,6 @@ namespace SWPets.Models
 
         public string Porte { get; set; }
         public string Observacao { get; set; }
-        /*
-        public int Adotante { get; set; }
-        public int Cadastrador { get; set; }
-        */
+        
     }
 }

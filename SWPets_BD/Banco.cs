@@ -28,7 +28,10 @@ namespace SWPets_BD
             SqlDataReader dados = cmdCoandoSelect.ExecuteReader();
             return dados;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 653f2d1 (BD failed)
         
     }
 }

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*------MENU--------*/
+
+div#menu {
+	height: 65px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+}
+
+ul#menu {
+	display: block;
+	padding-left: 100px;
+}
+
+ul#menu li{
+	display: inline-block;
+	padding: 25px;
+	padding-right: 20px;
+	font-family: sans-serif;
+	font-size: 12pt;
+}
+
+ul#menu li#login {
+	padding-left: 250px;
+}
+
+ul#menu li a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+
+ul#menu li a:hover {
+	color: rgba(139, 0, 190, 1.0);
+}
+
+
+
+div#central div#buscar {
+    height: 300px;
+    background-color: rgba(120, 0, 190, 1.0);
+}
+
+div#buscar form#barra_busca {
+	display: block;
+	width: 600px;
+	height: 200px;
+	float: right;
+	border: 3px solid black;
+	margin-top: 80px;
+	margin-right: 470px;
+	background-color: white;
+	border-radius: 20px;
+}
+
+form#barra_busca p.campos {
+    font-family: sans-serif;
+    font-size: 15pt;
+    color: black;
+  	padding: 15px;
+}
+
+form#barra_busca input#palavra_chave {
+	width: 300px;
+	height: 40px;
+}
+
+
+/*------------FIRST BODY----------------*/
+
+div#first_body {
+	height: 850px;
+	background-color: rgba(139, 0, 190, 1.0);
+
+}
+
+div#first_body div#iframe iframe#table_iframe {
+	margin-top: 100px;
+	margin-left:  50px;
+	height: 600px;
+	width: 750px;
+	border: 1px solid black;
+}

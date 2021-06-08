@@ -52,7 +52,7 @@ namespace SWPets.Controllers
 
             novaConexao.strQuerySelect();
 
-            return View(pet);
+            return View();
         }
 
     }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
-using SWPets.Models;
 
 namespace SWPets_BD
 {
@@ -14,8 +13,7 @@ namespace SWPets_BD
 
         public SqlConnection ConexaoBD()
         {           
-
-            conexao = new SqlConnection(@"data source=swpets.database.windows.net ; User ID=caio.b ; Password=" + senha + " ; Initial Catalog=SWPets");
+            conexao = new SqlConnection(@"data source=swpets.database.windows.net ; User ID=caio.b ; Password=C@165549 ; Initial Catalog=SWPets");
             conexao.Open();
             return conexao;
 
@@ -31,10 +29,6 @@ namespace SWPets_BD
             return dados;
         }
 
-        public void Construtor()
-        {
-
-        }
         
     }
 }

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial_scale=1"/>
-    <link rel="stylesheet"  type="text/css" href="../css/ajuda_style.css"/>
-    <title>Ajuda</title>
+    <link rel="stylesheet"  type="text/css" href="../css/estoque_buscar.css"/>
+    <title>Testando</title>
 </head>
 <body>
 
@@ -19,24 +19,23 @@
             <li id="ajuda"><a href="ajuda.html">Ajuda</a></li>
             <li id="login"><a href="login.html"><b>Login</b></a></li>
         </ul>
+    </div>  
+
+    <div id="buscar" class="cbuscar">
+
+        <form id="barra_busca" action="teste.php" method="post">
+            <p class="campos"><label for="palavra_chave">Pesquise: </label>
+            <input id="palavra_chave" name="palavra" placeholder="Ração"/></p>
+        </form>
+
     </div>
 
     <div id="first_body" class="first_body">
-        
-        <div id="div-artigo">
-            <article id="artigo">
-                <h3>Contatos</h3>
-                <p>Qualquer comportamente inesperado do sistema, deverá ser reportado para os desenvolvedores e mantenedores da aplicação.</p>
-                <ul id="lista-contatos" type="none">
-                    <li><p>Email: groupdev@gmail.com</p></li>
-                    <li><p>Telefone: (11) 3356-2521</p></li>
-                    <li><p>Celular: (11) 91456-2345</p></li>
-                </ul>
-            </article>
+        <div id="iframe">
+            <iframe src="table_iframe_estoque.html" id="table_iframe"></iframe>
         </div>
 
     </div>
-
 </div>
 
 </body>

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*------MENU--------*/
+
+div#menu {
+	height: 65px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+}
+
+ul#menu {
+	display: block;
+	padding-left: 100px;
+}
+
+ul#menu li{
+	display: inline-block;
+	padding: 25px;
+	padding-right: 20px;
+	font-family: sans-serif;
+	font-size: 12pt;
+}
+
+ul#menu li#login {
+	padding-left: 250px;
+}
+
+ul#menu li a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+
+ul#menu li a:hover {
+	color: rgba(139, 0, 190, 1.0);
+}
+
+
+
+/*------------FIRST BODY----------------*/
+
+div#form-div {
+	height: 700px;
+	background-color: rgba(139, 0, 190, 1.0);
+}
+
+div#form-div form#form-estoque {
+    width: 700px;
+    height: 400px;
+    float: right;
+    margin-right: 300px;
+    margin-top: 80px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+div#form-div form#form-estoque p {
+    padding: 2px;
+    margin: 10px;
+    font-size: 14pt;
+}
+
+div#form-div form#form-estoque input {
+	padding: 2px;
+	margin: 10px;
+	font-size: 13pt;
+	margin-left: 20px;
+}
+
+div#form-div form#form-estoque label {
+	margin: 5px;
+	font-size: 13pt;
+}
+
+div#form-div form#form-estoque button {
+    padding: 5px;
+    margin: 10px;
+    margin-left: 300px;
+    font-size: 13pt;
+}
+
+div#form-div form#form-estoque legend {
+	font-size: 13pt;
+	padding-top: 10px;
+	margin-left: 20px;
+}
+
+div#form-div form#form-estoque legend#main-legend {
+	font-size: 15pt;
+	padding: 5px;
+	text-align: center;
+}
